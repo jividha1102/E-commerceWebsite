@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View - E-Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .search-bar input[type="search"] {
+            border-radius: 20px;
+            padding-right: 40px;
+        }
+        .search-bar .fa-search {
+            position: absolute;
+            right: 10px;
+            color: #333;
+        }
+        .shopping-cart-badge {
+            position: relative;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .shopping-cart-badge img {
+            width: 40px;
+            height: auto;
+        }
+        .badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 5px;
+            font-size: 12px;
+        }
+        .container {
+            padding: 20px 0;
+        }
+        .product-details {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .product-details img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .product-details .description {
+            margin-bottom: 20px;
+        }
+        .product-details .btn-add-to-cart {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .product-details .btn-add-to-cart:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">E-Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="category.html">Category</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+                <form class="search-bar d-none d-lg-flex ms-3 me-3">
+                    <a href="search.html">
+                        <input class="form-control" type="search" placeholder="XYZ" aria-label="Search">
+                        <span class="fa fa-search"></span>
+                    </a>
+                </form>
+                <a href="cart.html" class="text-white shopping-cart-badge">
+                    <img src="images/shopcart-removebg-preview.png" alt="Shopping Cart">
+                    <span class="badge">32</span> <!-- Replace with actual number of items -->
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="product-details text-center">
+                    <img src="images/saree1.jpg" alt="Product Image">
+                    <h1 class="mt-3">Silk Saree</h1>
+                    <p class="description">
+                        Indulge in timeless elegance with our exquisite Silk Saree collection. 
+                        Crafted from the finest silk, each saree embodies traditional craftsmanship and modern 
+                        aesthetics.
+                         Our silk sarees are adorned with intricate patterns and vibrant hues, making them perfect 
+                         for every occasion, from weddings to festive celebrations. Experience the luxurious
+                          drape and smooth texture that only pure silk can offer. Elevate your wardrobe with our 
+                          handpicked selection of Silk Sarees and embrace the beauty of Indian heritage with every 
+                          ensemble.
+                    </p>
+                    <div class="price">₹ 7800</div>
+                    <button class="btn btn-add-to-cart mt-3">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (You can include the footer from your main site here) -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            &copy; 2024 E-shop. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
